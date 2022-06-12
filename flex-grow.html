@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - flex-grow</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+        .item{
+            background-color: orange;
+            margin: 5px;
+            padding:10px;
+            text-align: center;
+            color: white;
+        }
+        .flex-grow-0{
+            flex-grow: 0;
+        }
+        .flex-grow-1{
+            flex-grow: 1;
+        }
+        .flex-grow-2{
+            flex-grow: 2;
+        }
+        .flex-grow-3{
+            flex-grow: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>flex grow 1</h1>
+    <div class="flex-container">
+        <div class="item flex-grow-1">A</div>
+        <div class="item flex-grow-1">B</div>
+        <div class="item flex-grow-1">C</div>
+        <div class="item flex-grow-1">D</div>
+    </div>
+    <p><h1>flex grow alternados</h1></p>
+    <div class="flex-container">
+        <div class="item flex-grow-0">A</div>
+        <div class="item flex-grow-1">B</div>
+        <div class="item flex-grow-2">C</div>
+        <div class="item flex-grow-3">D</div>
+    </div>
+    <p><h1>flex grow 2</h1></p>
+    <div class="flex-container">
+        <div class="item flex-grow-0">A</div>
+        <div class="item flex-grow-2">Bbb</div>
+        <div class="item flex-grow-2">Ccc</div>
+        <div class="item flex-grow-0">D</div>
+    </div>
+    <p><h1>flex grow 3</h1></p>
+    <div class="flex-container">
+        <div class="item flex-grow-1">A</div>
+        <div class="item flex-grow-3">Bbb</div>
+        <div class="item flex-grow-3">Ccc</div>
+        <div class="item flex-grow-1">D</div>
+    </div>
+</body>
+</html>
