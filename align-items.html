@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - align-items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+            color: antiquewhite;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>CENTER</h2>
+    <section class="container center flex">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">item 3</div>
+    </section>
+    <p><h2>STRETCH</h2></p>
+    <section class="container stretch flex">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates!</div>
+    </section>
+    <p><h2>FLEX-START</h2></p>
+    <section class="container flex-start flex">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates!</div>
+    </section>
+    <p><h2>FLEX-END</h2></p>
+    <section class="container flex-end flex">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates!</div>
+    </section>
+    <p><h2>BASELINE</h2></p>
+    <section class="container baseline flex">
+        <div class="item"><br>1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates!</div>
+    </section>
+    <P><h1>COLUMN</h1></P>
+    <h2>CENTER</h2>
+    <section class="container center flex column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">item 3</div>
+    </section>
+    <p><h2>STRETCH</h2></p>
+    <section class="container stretch flex column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates!</div>
+    </section>
+    <p><h2>FLEX-START</h2></p>
+    <section class="container flex-start flex column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates!</div>
+    </section>
+    <p><h2>FLEX-END</h2></p>
+    <section class="container flex-end flex column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates!</div>
+    </section>
+    <p><h2>BASELINE</h2></p>
+    <section class="container baseline flex column">
+        <div class="item"><br>1</div>
+        <div class="item">Lorem ipsum dolor sit.</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptates!</div>
+    </section>
+    <p><h2>ALINHAMENTO CENTRAL A TELA</h2></p>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae eum, id veritatis cupiditate ratione repellendus.</div>
+    </section>
+</body>
+</html>
